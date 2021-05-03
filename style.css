@@ -1,0 +1,607 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* O * serve para selecionar todas as propriedades*/
+a {
+    text-decoration: none ;
+    color: black;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: rgb(255, 253, 145);
+}
+
+/* classes gerais*/ 
+.center {
+    text-align: center;
+}
+.clear{
+    clear: both;
+}
+/**/
+
+/* Section nav */
+nav.menu {
+    position: fixed;
+    background-image: url( images/bg-menu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 10%;
+    width: 100%;
+}
+
+.menu  li{
+    text-decoration: none;
+    color: rgba(255, 0, 0, 0) ;
+    font-weight: bold;
+    font-size: 22px;
+    padding-right: 30px ;
+    padding-left: 30px;
+}
+/* Fim nav */ 
+
+/*  Section inicio */ 
+
+.Titulo-1 {
+    background-image: url(images/bg_barneytie.jpg); 
+    background-attachment: fixed;  /*efeito parallax*/
+    background-size: 80% 55%; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-color: black;
+    color:yellow;
+    box-shadow:20px 20px 10px rgba(251, 255, 2, 0.45);  
+    text-align: center;
+    font-family: 'Tahoma';
+    font-style: oblique;
+    font-variant: small-caps;
+    font-size: 30px;
+    padding: 80px;
+    width: 85%; 
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+.bio-da-serie {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    color: black;
+    padding-top: 40px;
+    line-height: 20px;
+    font-size: 20px;
+}
+
+/*      */
+
+
+/* Section Doppelganger*/
+section.Doppelgangers {
+    padding-top: 10px;
+    background-color: #ffb922;
+    padding-bottom: 50px;
+}
+
+.Doppelgangers h1{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Doppelgangers p{
+    max-width: 1000px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 80%;
+    margin: 10px auto;
+    line-height: 25px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.Doppelgangers .container{
+    width: 97%;
+    max-width: 1000px;
+    margin:  10px auto;  
+    padding: 10px 2%;
+    border: 2px solid rgb(251, 255, 13);
+    background-color: rgb(255, 121, 0);
+    animation-name: animacao-dp;
+    animation-duration: 2.5s;
+    animation-delay: 0.8s;
+    animation-iteration-count: 1; 
+}
+
+.Doppelgangers .container h2{
+    text-align: center;
+    font-variant: small-caps;
+}
+.img-wraper{
+    margin-right: -4px;
+    display: inline-block;
+    width: 50%;
+    padding-top: 0%;
+    border: 10px solid rgb(255, 206, 72);
+}
+
+.img-wraper .img {
+    width: 100%;
+    height: 100%;
+    padding-top: 100%;
+    background-color: rgb(255, 94, 0);
+}
+
+@keyframes animacao-dp {
+    0% {
+        background-color: rgb(255, 94, 0);
+    }
+
+    25%{
+        background-color: rgb(255, 136, 67);
+    }
+
+    50%{
+        background-color: rgb(255, 168, 118);
+
+    }
+
+    75% {
+        background-color: #ff9100;
+    }
+
+    100% {
+        background-color: rgb(255, 94, 0);        
+    }
+}
+.img-wraper h3 {
+    font-size: 20px;
+    font-family: 'Tahoma';
+    font-weight: bolder;
+    text-align: center;
+    font-style: oblique; 
+    padding: 4% 0;
+}
+
+.img-wraper  .ted {
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(images/p-TedMosby.jpg);
+}
+
+.img-wraper  .marshall {
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(images/p-marshall-ericksen.jpg);
+}
+.img-wraper  .lily {
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(images/p-lily-aldrin.png);
+}
+
+.img-wraper  .robin {
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(images/p-robin-scherbatsky.jpg);
+}
+
+.img-wraper  .barney {
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(images/p-barney-stinson.jpg);
+}
+
+.img-wraper  .ted-dp {
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(images/Doppelganger-Mexican-Wrestler-Ted.jpg);
+}
+
+.img-wraper  .marshall-dp {
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(images/Doppelganger-Mousatche-Marshall.jpg);
+}
+
+.img-wraper  .lily-dp {
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(images/doppelganger-Stripper-Lily.jpg);
+}
+.img-wraper  .robin-dp {
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(images/Doppelganger-Lesbian-Robin.jpg);
+}
+.img-wraper  .barney-dp {
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(images/Doppelganger-Dr-John-Stangel.jpg);
+}
+
+.fade {
+  /*margin: 50px;
+  padding: 50px;
+  background-color: lightgreen;*/
+  opacity: 0;
+}
+/* */
+
+/* Mosaico */
+section.mosaico {
+    background-color: #4683AB;
+}
+
+.places {
+    box-shadow: 10px 5px 30px 10px rgb(82, 255, 246);
+    border: 2px solid rgb(181, 189, 255);
+    background-color: #56a6db;
+    width: 90%;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    margin: 10px auto;
+    text-align: center;
+    font-style: oblique;
+}
+
+.flex-mosaico{
+	display: flex;
+}
+
+.item-1-mosaico{
+	background-position: center;
+	background-size: cover;
+    background-color: #ccc;
+	width: 60%;
+}
+
+.item-2-mosaico{
+	background-color: #4683AB;
+	padding:150px 40px;
+	width: 40%;
+}
+
+.item-2-mosaico p{
+	color: white;
+}
+
+.ap-ted {
+    background-image: url(images/ap_tedemarshall.jpg);
+}
+
+.ap-barney {
+    background-image: url(images/ApartamentoBarney.png);
+    order: 2;
+}
+
+.mac-pub {
+    background-image: url(images/maclarens-HIMYM-NYC.jpg);
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    max-width: 850px;
+    width: 90%;
+}
+
+.tabela {
+    letter-spacing: 2px;
+    line-height: 25px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.texto-tabela {
+    border:1px solid black;
+    word-wrap: break-word;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+video {
+    width: 60%;
+    margin: 20px auto;
+}
+
+video:hover {
+    opacity: 0.9;
+}
+
+/*
+.banner-personagens {
+    width: 1000px;
+    margin: 20px auto;
+}
+
+.banner-personagens .ted {
+    width: 500px;
+    height: 400px;
+    background-image: url(imagens/tedbeijatracy.jpg); 
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+    float: left;
+    box-sizing: border-box;
+}
+
+.banner-personagens .tracy {
+    width: 500px;
+    height: 400px;
+    background-image: url(imagens/tracybeijated.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+    float: left;
+    box-sizing: border-box;
+}
+
+.banner-personagens .lily {
+    width: 500px;
+    height: 400px;
+    background-image: url(imagens/marshallandlilyy.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+    float: left;
+    box-sizing: border-box;
+}
+
+.banner-personagens .marshall {
+    width: 500px;
+    height: 400px;
+    background-image: url(imagens/lilyandmasrshall.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+    float: left;
+    box-sizing: border-box;
+}
+.banner-personagens .robin {
+    width: 500px;
+    height: 400px;
+    background-image: url(imagens/robin-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;    
+    float: left;
+    box-sizing: border-box;
+}
+.banner-personagens .barney {
+    width: 500px;
+    height: 400px;
+    background-image: url(imagens/barney-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;    
+    float: left;
+    box-sizing: border-box;
+}
+*/
+
+/*.bg {
+    margin: 0 auto;
+    width: 100%;
+	height: 400px;
+	background-image: url('imagens/bro_code_ap_do_barney_widelg.jpg');
+	background-position: center;       left,right,center / center,top,bottom /
+    background-repeat:no-repeat / no-repeat,repeat-x,repeat-y /;
+    background-size: 50% /  cover,auto,px ou % /;
+} 
+*/
+
+
+
+.skate {
+    max-width: 800px; 
+    width: 45%;
+    widows: 50%;
+    margin: 50px auto;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    transition: 1.5s;
+    transition-delay: 0.5s;
+}
+.skate:hover {
+    width: 90%;
+}
+
+/* Formulario inicio*/ 
+form{
+	width: 96%;
+	max-width: 600px;
+	margin:10px auto; 
+	text-align: left;
+}
+
+form * {
+    font-family: 'Montserrat';
+}
+
+form fieldset{
+    background-color: #ffae002d;
+    padding: 20px 20px;
+    border:1px solid rgb(218, 131, 0);
+}
+
+form legend{
+    text-align: left;
+    font-size: 25px;
+    color: rgb(255, 174, 0);
+    font-weight: bold;
+    
+}
+
+form input[type=text]{
+    font-size: 18px;
+	display: inline-block;
+	margin-top:30px;
+	width: 80%;
+	padding: 10px 13px;
+	border:1px solid #ccc;
+}
+
+
+form input[type=text]:focus, form select:focus, form textarea:focus{
+	outline: 0;
+}
+
+
+form select{
+    font-size: 18px;
+    color:rgb(100,100,100);
+    width:calc(80% + 26px);
+    margin-top:30px;
+    padding: 10px 13px;
+    display: inline-block;
+    border:1px solid #ccc;
+}
+
+
+form h2{
+    margin-top:20px;
+	color: rgba(218, 186, 4, 0.925);
+}
+
+
+.input{
+	display: block;
+	text-align: left;
+	margin-top:20px;
+}
+
+.input span{
+	margin-left: 13px;
+	font-size: 22px;
+	color: rgb(50, 50, 50);
+}
+
+
+input[type=checkbox]{
+	display: none;
+}
+
+label{
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-size: 20px;
+	display: block;
+	width: 80%;
+	height:40px;
+	background-color:red;
+    text-align: center;
+    color: rgb(43, 43, 43);
+    cursor: cell;   
+    margin-left: 50px;
+}
+
+input[type=checkbox]:checked + label{
+	background-color: green;
+} 
+
+
+form textarea{
+    font-size: 18px;
+	border: 1px solid #ccc;
+	margin-top:30px;
+    width: 90% ;
+	height: 150px;
+	padding: 10px 13px;
+	resize: none;
+}
+
+form input[type=submit]{
+	margin-top:30px;
+	width: 65%;
+	height: 35px;
+	font-size: 18px;
+	cursor: pointer;
+	border:2px solid rgb(255, 245, 187);
+    border-radius: 50px;
+	color:rgb(0, 0, 0);
+	background-color: rgb(255, 166, 0);
+}
+
+.envio {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+/**/
+
+/* Inicio footer */ 
+.footer{
+    background-color: #ff660041;
+    border-top:2px solid #ff9100;
+	text-align: center;
+	color: rgb(0, 0, 0);
+    font-family: 'Tahoma';
+    font-variant: small-caps;
+    margin-top: 50px;
+    padding-bottom: 25px;
+    font-size: 20px;
+}
+
+.footer div {
+    margin-top: 40px;
+}
+/* */
+
+/*Media queryes inicio */
+@media screen and (max-width: 1024px){
+
+}
+
+@media screen and (max-width: 768px){
+    .Titulo-1 {
+       margin: bottom 10px; 
+}
+
+
+    .flex-mosaico{
+		display: block;
+	}
+
+	.item-1-mosaico{
+		padding-top: 80%;
+		width: 100%;
+	}
+
+	.item-2-mosaico{
+		text-align: justify;
+		width: 100%;
+        padding: 70px;
+	}
+}
+@media screen and (max-width: 580px){
+    .Titulo-1 {
+        font-size: 24.5px;
+    }
+}
+@media screen and (max-width: 510px){
+    nav.menu {
+        display: none;
+    }
+     .Titulo-1 {
+        font-size: 20px;
+    }
+
+}
+/**/
